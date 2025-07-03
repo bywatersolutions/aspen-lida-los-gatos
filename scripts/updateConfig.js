@@ -1,5 +1,6 @@
 const fs = require('fs');
 const data = require('../app-configs/apps.json');
+const build = require('../app-configs/build.json');
 const version = require('../version.json');
 
 function getArgs() {
@@ -56,7 +57,7 @@ fs.readFile('../code/eas.json', 'utf8', function (err, data) {
      }
 });
 
-let versionAsInt = version['build'];
+let versionAsInt = build['build'];
 versionAsInt = parseInt(versionAsInt, 10);
 
 const app_config = {
@@ -76,7 +77,7 @@ const app_config = {
           fallbackToCacheTimeout: 250000,
           url: 'https://u.expo.dev/' + app['easId'],
      },
-     runtimeVersion: version['build'],
+     runtimeVersion: build['build'],
      splash: {
           image: app['discoveryUrl'] + 'API/SystemAPI?method=getLogoFile&themeId=' + app['themeId'] + '&type=appSplash&slug=' + app['slug'],
           resizeMode: 'contain',
@@ -85,7 +86,7 @@ const app_config = {
      jsEngine: 'hermes',
      assetBundlePatterns: ['**/*'],
      ios: {
-          buildNumber: version['build'],
+          buildNumber: build['build'],
           bundleIdentifier: app['reverseDns'],
           supportsTablet: true,
           icon: app['discoveryUrl'] + 'API/SystemAPI?method=getLogoFile&themeId=' + app['themeId'] + '&type=appIcon&slug=' + app['slug'],
