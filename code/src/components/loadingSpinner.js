@@ -7,12 +7,10 @@ TODO: Translate the accessibility labels
 */
 
 export function loadingSpinner(message = '') {
-     const { colorMode, theme, textColor } = React.useContext(ThemeContext);
-
      if (message !== '') {
           return (
                <Center flex={1} px="3">
-                    <VStack space="sm" alignItems="center">
+                    <VStack space="md" alignItems="center">
                          <Spinner size="large" accessibilityLabel="Loading..." color={theme['colors']['primary']['500']}/>
                          <Heading size="md" color={textColor}>{message}</Heading>
                     </VStack>
@@ -23,7 +21,7 @@ export function loadingSpinner(message = '') {
      return (
           <Center flex={1}>
                <HStack>
-                    <Spinner size="large" color={theme['colors']['primary']['500']} accessibilityLabel="Loading..." />
+                    <Spinner size="large" accessibilityLabel="Loading..." />
                </HStack>
           </Center>
      );
@@ -35,7 +33,7 @@ export const LoadingSpinner = ({ message = '' }) => {
           return (
                <Center flex={1} px="$3">
                     <VStack space="md" alignItems="center">
-                         <Spinner size="lg" color={theme['colors']['primary']['500']} accessibilityLabel="Loading..." />
+                         <Spinner size="large" color={theme['colors']['primary']['500']} accessibilityLabel="Loading..." />
                          <Heading size="md" color={textColor}>
                               {message}
                          </Heading>
