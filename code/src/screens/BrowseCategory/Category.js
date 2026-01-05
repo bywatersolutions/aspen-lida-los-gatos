@@ -299,6 +299,8 @@ const DisplaySubCategoryBar = ({ subCategories, selectedIndex, onSelect, data })
 
      const { theme, textColor, colorMode } = React.useContext(ThemeContext);
      const { library } = React.useContext(LibrarySystemContext);
+     const { language } = React.useContext(LanguageContext);
+     const { maxNum } = React.useContext(BrowseCategoryContext);
 
      const [showErrorDialog, setShowErrorDialog] = React.useState(false);
      const [errorTitle, setErrorTitle] = React.useState('');
