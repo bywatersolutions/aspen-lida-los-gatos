@@ -19,25 +19,25 @@ Copy `app.json.example` to `app.json` and fill in the values.  These are not sec
 Add these secrets to your GitHub repository settings:
 
 ## Aspen Secrets
-**API_KEY_1**: API KEY 1 as defined in your Greenhouse (should be same as Aspen Discovery in most all cases)
-**API_KEY_2**: API KEY 2 as defined in your Greenhouse
-**API_KEY_3**: API KEY 3 as defined in your Greenhouse
-**API_KEY_4**: API KEY 4 as defined in your Greenhouse
-**API_KEY_5**: API KEY 5 as defined in your Greenhouse
+- **API_KEY_1**: API KEY 1 as defined in your Greenhouse (should be same as Aspen Discovery in most all cases)
+- **API_KEY_2**: API KEY 2 as defined in your Greenhouse
+- **API_KEY_3**: API KEY 3 as defined in your Greenhouse
+- **API_KEY_4**: API KEY 4 as defined in your Greenhouse
+- **API_KEY_5**: API KEY 5 as defined in your Greenhouse
 
 ## Expo Secrets
-**EXPO_TOKEN**: Your Expo account token
-**EXPO_APPLE_ID**: Your Apple Developer account email
-**EXPO_APPLE_PASSWORD**: Your Apple Developer account password or app-specific password
-**EXPO_TEAM_ID**: Your Apple Developer Team ID
+- **EXPO_TOKEN**: Your Expo account token
+- **EXPO_APPLE_ID**: Your Apple Developer account email
+- **EXPO_APPLE_PASSWORD**: Your Apple Developer account password or app-specific password
+- **EXPO_TEAM_ID**: Your Apple Developer Team ID
 
 ## Sentry Secrets
 **SENTRY_AUTH_TOKEN**: Auth Token for Sentry.io (error reporting)
 
 ## Google Secrets
-**GOOGLE_PLAY_SERVICE_ACCOUNT**: Google Play service account JSON (base64 encoded)
-**GOOGLE_API_KEY_ANDROID**: Your Google API Key for Android
-**GOOGLE_API_KEY_APPLE**: Your Google API Key for Apple
+- **GOOGLE_PLAY_SERVICE_ACCOUNT**: Google Play service account JSON (base64 encoded)
+- **GOOGLE_API_KEY_ANDROID**: Your Google API Key for Android
+- **GOOGLE_API_KEY_APPLE**: Your Google API Key for Apple
 
 ## Slack Secrets
 **SLACK_WEBHOOK**: Slack webhook URL for notifications (optional)
