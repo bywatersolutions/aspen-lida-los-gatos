@@ -36,9 +36,11 @@
   },
   "submit": {
     "production": {
+      "android": {
+        "releaseStatus": "draft"
+      },
       "ios": {
         "ascAppId": "$ASC_APP_ID"
       }
-    }
   }
 }
