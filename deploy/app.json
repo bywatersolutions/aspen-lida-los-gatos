@@ -1,0 +1,15 @@
+{
+  "name": "Los Gatos Library",
+  "slug": "los-gatos",
+  "easId": "95c77f61-9b28-4848-85ff-84fe696dc0db",
+  "reverseDns": "org.aspendiscovery.losgatos",
+  "discoveryUrl": "https://catalog.losgatosca.gov/",
+  "greenhouseUrl": "https://catalog.losgatosca.gov/",
+  "libraryId": "3",
+  "themeId": "1",
+  "background": "#004A5D",
+  "sentryProject": "aspen-lida-los-gatos",
+  "sentryDsn": "https://d76ddc95f458deda8d428e0485f9dc29@o994439.ingest.us.sentry.io/4507228475621376",
+  "ascAppId": "6502470385",
+  "logLevel": "0"
+}
