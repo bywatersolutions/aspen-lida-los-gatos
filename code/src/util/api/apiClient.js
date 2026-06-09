@@ -61,10 +61,6 @@ function buildHeaders(isPost = false, language = 'en', customHeaders = {}) {
           'Preferred-Language': language,
      };
 
-     if (isPost) {
-          headers['Content-Type'] = 'application/x-www-form-urlencoded';
-     }
-
      // legacy authentication method
      const authTokens = createAuthTokens();
      headers['Authorization'] = `Basic ${base64.encode(`${authTokens.username}:${authTokens.password}`)}`;
@@ -393,24 +389,7 @@ export class ApiClient {
                body: formData,
           };
 
-          delete options.headers['Content-Type'];
           return this.request(url, options, { ...config, isPost: true });
-     }
-
-     /**
-      * POST without additional headers being supplied
-      */
-     async postWithoutAdditionalHeaders(endpoint, data = {}, config = {}) {
-          const url = this.buildUrl(endpoint, config.params);
-          const headers = buildHeaders(true, this.language, config.headers);
-          const options = {
-               method: 'POST',
-               headers: { ...headers },
-               body: data,
-          };
-
-          //Indicate this is not a post so the Content-Type is not set automatically.
-          return this.request(url, options, { ...config, isPost: false });
      }
 
      /**

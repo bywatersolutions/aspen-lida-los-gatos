@@ -231,7 +231,7 @@ export async function loadTranslationsFromDiscovery(language, url) {
                     language,
                });
 
-               const response = await client.postWithoutAdditionalHeaders(
+               const response = await client.post(
                     '/SystemAPI?method=getBulkTranslations',
                     { terms: defaults },
                     {
